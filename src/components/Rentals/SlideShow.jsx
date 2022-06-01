@@ -3,15 +3,14 @@ import rentals from '../../local-json/rentals.json';
 import {Route, Link, Routes, useParams} from 'react-router-dom';
 
 function SlideShow() {
-    const params = useParams();
-
-    console.log(params);
+    
     
     let rentalsData = rentals;
-    console.log(rentalsData);
+    // Si l'id de la page correspond 
+    const params = useParams();
 
-    const id = window.location.search.split('id=')[1];
-    const rentalsItems = !id ? rentalsData : rentalsData.filter(rental => rental.id === id);
+    console.log(rentalsData.includes(params))
+    
 
     return (
         <div className="slideshow-container">
