@@ -1,0 +1,39 @@
+// initialize zero for browser
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    max-width: 1240px;
+    margin: auto;
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 45px;
+}
+
+
+// Parameters for App //
+.App{
+  max-width: 1240px;  
+  width: 1240px;  
+}
+
+@media screen and (max-width){
+    body {
+        max-width: 375px;
+        width:100%;
+        display: flex;
+        flex-direction:column;
+    }
+    .App{
+        max-width: 375px;  
+        width: 375px;  
+      }
+}
+
+figure{
+    margin: 0;
+    padding: 0;
+}

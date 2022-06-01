@@ -1,0 +1,126 @@
+// Mise en page des composant de la page "A propos" //
+
+.a-propos{
+    display: flex;
+    flex-direction:column;
+    gap: 50px;
+}
+
+.conatiner-a-propos{
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// Fiabilité //
+.accordeon-fiabilite{
+    width: 1023px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #FF6060;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 24px;
+        h3{
+            padding-left: 15px;
+            font-weight: lighter;
+        }
+    
+}
+
+.reponse-fiabilite{
+    width: 1023px;
+    color: #FF6060;
+    background-color: #F6F6F6;
+    padding: 0.5rem;
+    font-size: 24px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+// Respect //
+.accordeon-respect{
+    width: 1023px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #FF6060;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 24px;
+        h3{
+            padding-left: 15px;
+            font-weight: lighter;
+        }
+    
+}
+
+.reponse-respect{
+    width: 1023px;
+    color: #FF6060;
+    background-color: #F6F6F6;
+    padding: 0.5rem;
+    font-size: 24px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+// Service //
+.accordeon-service{
+    width: 1023px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #FF6060;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 24px;
+        h3{
+            padding-left: 15px;
+            font-weight: lighter;
+        }
+    
+}
+
+.reponse-service{
+    width: 1023px;
+    color: #FF6060;
+    background-color: #F6F6F6;
+    padding: 0.5rem;
+    font-size: 24px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+// Responsabilite //
+.accordeon-responsabilite{
+    width: 1023px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #FF6060;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 24px;
+        h3{
+            padding-left: 15px;
+            font-weight: lighter;
+        }
+    
+}
+
+.reponse-responsabilite{
+    width: 1023px;
+    color: #FF6060;
+    background-color: #F6F6F6;
+    padding: 0.5rem;
+    font-size: 24px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

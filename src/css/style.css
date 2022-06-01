@@ -1,0 +1,322 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  max-width: 1240px;
+  margin: auto;
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 45px;
+}
+
+.App {
+  max-width: 1240px;
+  width: 1240px;
+}
+
+@media screen and (max-width) {
+  body {
+    max-width: 375px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .App {
+    max-width: 375px;
+    width: 375px;
+  }
+}
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.a-propos {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.conatiner-a-propos {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accordeon-fiabilite {
+  width: 1023px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #FF6060;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 24px;
+}
+.accordeon-fiabilite h3 {
+  padding-left: 15px;
+  font-weight: lighter;
+}
+
+.reponse-fiabilite {
+  width: 1023px;
+  color: #FF6060;
+  background-color: #F6F6F6;
+  padding: 0.5rem;
+  font-size: 24px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.accordeon-respect {
+  width: 1023px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #FF6060;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 24px;
+}
+.accordeon-respect h3 {
+  padding-left: 15px;
+  font-weight: lighter;
+}
+
+.reponse-respect {
+  width: 1023px;
+  color: #FF6060;
+  background-color: #F6F6F6;
+  padding: 0.5rem;
+  font-size: 24px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.accordeon-service {
+  width: 1023px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #FF6060;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 24px;
+}
+.accordeon-service h3 {
+  padding-left: 15px;
+  font-weight: lighter;
+}
+
+.reponse-service {
+  width: 1023px;
+  color: #FF6060;
+  background-color: #F6F6F6;
+  padding: 0.5rem;
+  font-size: 24px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.accordeon-responsabilite {
+  width: 1023px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #FF6060;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 24px;
+}
+.accordeon-responsabilite h3 {
+  padding-left: 15px;
+  font-weight: lighter;
+}
+
+.reponse-responsabilite {
+  width: 1023px;
+  color: #FF6060;
+  background-color: #F6F6F6;
+  padding: 0.5rem;
+  font-size: 24px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.kasa-banner-a-propos {
+  border-radius: 25px;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.kasa-footer {
+  margin-top: 50px;
+  background-color: #000000;
+  width: 100%;
+  max-width: 1240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.kasa-footer p {
+  font-size: 25px;
+}
+
+.kasa-container-header {
+  max-width: 1240px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 45px;
+}
+.kasa-container-header .kasa-header-section1 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 45px;
+  justify-content: space-between;
+  align-items: center;
+}
+.kasa-container-header .kasa-header-section1 .kasa-ul-nav {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 25px;
+}
+.kasa-container-header .kasa-header-section1 .kasa-ul-nav .kasa-li-nav {
+  color: #ff6060;
+  font-weight: 500;
+  font-size: 24px;
+}
+.kasa-container-header .kasa-header-section1 .kasa-ul-nav .kasa-li-nav:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.kasa-container-header .kasa-header-section2 {
+  width: 1240px;
+  margin-top: 45px;
+}
+.kasa-container-header .kasa-header-section2 figure .kasa-img-header {
+  position: relative;
+}
+.kasa-container-header .kasa-header-section2 figure .kasa-title-header {
+  position: absolute;
+  z-index: 2;
+  left: 300px;
+  bottom: 50px;
+  color: #fff;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 385px) {
+  .kasa-header {
+    max-width: 375px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .kasa-header .kasa-ul-nav {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 25px;
+  }
+  .kasa-header .kasa-ul-nav .kasa-li-nav {
+    color: #ff6060;
+    font-weight: 500;
+    font-size: 24px;
+  }
+  .kasa-header .kasa-ul-nav .kasa-li-nav:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-error-page {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 288px;
+  font-weight: bold;
+  color: #FF6060;
+}
+
+.subtitle-error-page {
+  color: #FF6060;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 80px;
+}
+
+.retour-acceuil {
+  color: #FF6060;
+  font-size: 18px;
+}
+
+.div-card-list {
+  width: 100%;
+  max-width: 1130px;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 55px;
+  margin-top: 45px;
+  padding-bottom: 25px;
+  padding-left: 55px;
+  padding-top: 55px;
+  padding-right: 55px;
+  border-radius: 25px;
+}
+.div-card-list .kasa-card-item {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  background-color: #FF6060;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.div-card-list .kasa-card-item h4 {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  padding: 15px;
+  margin: 0;
+}
+.div-card-list .kasa-card-item h4:hover {
+  color: #fff;
+}
+.div-card-list .kasa-card-item .cover-img {
+  width: 450px;
+  height: 340px;
+  object-fit: content;
+  border-radius: 10px;
+  transition: 1s;
+}
+.div-card-list .kasa-card-item .cover-img:hover {
+  opacity: 0.8;
+  border-radius: 10px;
+  transform: scale(1.05);
+  transition: 1s;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */

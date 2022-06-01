@@ -1,0 +1,50 @@
+/// Home page kasa ///
+
+.div-card-list{
+    width: 100%;
+    max-width: 1130px;
+    background-color:#f6f6f6;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 55px;
+    margin-top: 45px;
+    padding-bottom: 25px;
+    padding-left: 55px;
+    padding-top: 55px;
+    padding-right: 55px;
+    border-radius:25px;
+    .kasa-card-item{
+        position: relative;
+        width: 340px;
+        height: 340px;
+        background-color: #FF6060;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        h4{
+            position: absolute;
+            bottom: 0;
+            color: #fff;
+            padding: 15px;
+            margin: 0;
+            &:hover{
+                color: #fff;
+            }
+        }
+        .cover-img{
+            width: 450px;
+            height: 340px;
+            object-fit: content;
+            border-radius:10px;
+            transition: 1s;
+            &:hover{
+                opacity: 0.8;
+                border-radius: 10px;
+                transform: scale(1.05);
+                transition: 1s;
+                color: #fff;
+            }
+        }
+    }
+}
+
