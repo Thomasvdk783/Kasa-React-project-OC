@@ -8,15 +8,15 @@ import {Route, Link, Routes, useParams} from 'react-router-dom';
 
 
 function RentalItem() { 
-  const params = useParams();
+  // const params = useParams();
 
-  console.log(params)
+  // console.log(params)
 
   return (
     <div className="div-card-list">
       {
           rentals && rentals.map(({ id, title, cover }) =>(
-            <Link  to={`/Rentals/${id}`}>
+            <Link  to={`/Rentals/${title.split(' ').join('-')}-${id}`}>
               <article src="" key={id} className="kasa-card-item">
                 <h4 className="title-item">{title}</h4>
                 <img className="cover-img" src={cover} />

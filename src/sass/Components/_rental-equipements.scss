@@ -1,0 +1,15 @@
+// Style for rental equipement compinent in rental page //
+
+.component-equipement{
+    width: 582px;
+    height: 249px;
+    .accordeon-equipements{
+        background-color: #ff6060;
+        border-radius: 10px;
+        max-height: 52px;
+        .title-equipements{
+            color: #fff;
+            font-size: 18px;
+        }
+    }
+}
