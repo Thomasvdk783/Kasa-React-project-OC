@@ -1,34 +1,26 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import { useEffect, useState} from 'react'
 
 
 function Fiabilite() {
-    var acc = document.getElementsByClassName("accordeon-fiabilite");
-    var i;
 
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            console.log("clic ok")
-          this.classList.toggle("active");
-          var reponseFiabilite = this.nextElementSibling;
-          if (reponseFiabilite.style.display === "block") {
-            reponseFiabilite.style.display = "none";
-          } else {
-            reponseFiabilite.style.display = "block";
-          }
-        });
-      }
+    const [accordeon, setAccordeon] = useState(false)
+    const handleDisplayAccordeon = () => {
+        setAccordeon(!accordeon)
+    }
 
     return (
+
         <div className="conatiner-a-propos">
-            <div id="accordeon-fiabilite" className="accordeon-fiabilite">
+                <div id="accordeon-fiabilite" className="accordeon-fiabilite" onClick={handleDisplayAccordeon}>
                 <h3 className="title-h3-a-propos">Fiabilité</h3>
-                <FontAwesomeIcon icon="fa-solid fa-chevron-down" />
+                {/* <FontAwesomeIcon icon="fa-solid fa-chevron-down" /> */}
             </div>
+            {accordeon &&
             <div className="reponse-fiabilite">
                 <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées pas nos équipes.</p>
-            </div>
+            </div>}
         </div>
     );
     }

@@ -2,11 +2,12 @@
 
 import RentalItem from "./RentalItem";
 
-function RentalListing() {
+function RentalListing(props) {
+  console.log(props)
   return (
     <div>
       <section className="kasa-container-rental-listing">
-        <RentalItem />
+        <RentalItem datas={props.datas}/>
       </section>
     </div>
   );

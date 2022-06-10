@@ -73,7 +73,7 @@ figure {
   background-color: #F6F6F6;
   padding: 0.5rem;
   font-size: 24px;
-  display: none;
+  text-align: left;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -101,9 +101,9 @@ figure {
   background-color: #F6F6F6;
   padding: 0.5rem;
   font-size: 24px;
-  display: none;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  text-align: left;
 }
 
 .accordeon-service {
@@ -129,9 +129,9 @@ figure {
   background-color: #F6F6F6;
   padding: 0.5rem;
   font-size: 24px;
-  display: none;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  text-align: left;
 }
 
 .accordeon-responsabilite {
@@ -157,9 +157,9 @@ figure {
   background-color: #F6F6F6;
   padding: 0.5rem;
   font-size: 24px;
-  display: none;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  text-align: left;
 }
 
 .kasa-banner-a-propos {

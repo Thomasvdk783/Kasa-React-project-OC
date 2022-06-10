@@ -3,12 +3,20 @@ import rentals from "../../local-json/rentals.json";
 import SlideShow from "../../components/Rentals/SlideShow";
 import Description from "../../components/Rentals/Description";
 import Equipements from "../../components/Rentals/Equipements";
+import { useState, useEffect } from 'react';
 
 function Rentals() {
+  // const [datas, setDatas] = useState(null)
+
+  // useEffect(() => {
+  //   setDatas(rentals)
+  // }, [])
+
+  // console.log(datas)
+
   // const params = useParams();
   const id = window.location.href.split("-").slice(-1);
   const result = rentals.filter((rental) => rental.id === id[0]);
-  console.log(result);
 
   return (
     <div className="container-rentals-page">
