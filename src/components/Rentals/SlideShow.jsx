@@ -1,21 +1,25 @@
 import React from "react";
+import { useState } from "react";
 
 function SlideShow(props) {
-  // console.log("ok pour props", props)
-  // const datasRental = props.datasRentals
 
-  // const id = window.location.href.split("-").slice(-1);
-  // const result = datasRental.filter((data) => data.id === id[0]);
+  const id = window.location.href.split("-").slice(-1);
+  const result = props.datas && props.datas.filter((data) => data.id === id[0]);
   
+  const [picturesIndex, setPictureIndex] = useState(0)
+
+  // step 1 : add onclick on arrow
+  // step 2 : onclick call function
+  // step 3 : décrémenter le picturesIndex dans une function
+  // step 4: inrémenter le picturesIndex dans une autre function
 
   return (
     <div className="slideshow-container">
       <div>
-        {/* {
-          result.map(({pictures}) => (
-            <img key={pictures.id} className="img-slide-show" src={pictures[2]} />
-          ))
-        } */}
+        {
+          result && result.map(({pictures, title, id}) => 
+                <img key={id} alt={title} className="img-slide-show" src={pictures[picturesIndex]} />
+        )}
       </div>
     </div>
   );

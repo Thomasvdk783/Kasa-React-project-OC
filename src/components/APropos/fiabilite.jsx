@@ -1,7 +1,7 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useEffect, useState} from 'react'
-
+import ArrowDown from '../../medias/ArrowDown.svg'
+import ArrowUp from '../../medias/ArrowUp.svg'
 
 function Fiabilite() {
 
@@ -15,7 +15,7 @@ function Fiabilite() {
         <div className="conatiner-a-propos">
                 <div id="accordeon-fiabilite" className="accordeon-fiabilite" onClick={handleDisplayAccordeon}>
                 <h3 className="title-h3-a-propos">Fiabilité</h3>
-                {/* <FontAwesomeIcon icon="fa-solid fa-chevron-down" /> */}
+                <img alt="arrow-down" src={ArrowDown} className="arrow-down"/>
             </div>
             {accordeon &&
             <div className="reponse-fiabilite">

@@ -1,5 +1,6 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import ArrowDown from '../../medias/ArrowDown.svg'
+import ArrowUp from '../../medias/ArrowUp.svg'
 import { useEffect, useState} from 'react'
 
 
@@ -15,7 +16,7 @@ function Respect() {
         <div className="conatiner-a-propos">
             <div id="accordeon-respect" onClick={handleDisplayAccordeonRespect} className="accordeon-respect">
                 <h3 className="title-h3-a-propos">Respect</h3>
-                {/* <FontAwesomeIcon icon="fa-solid fa-chevron-down" /> */}
+                <img alt="arrow-down" src={ArrowDown} className="arrow-down"/>
             </div>
             {accordeonRespect && 
                 <div className="reponse-respect">

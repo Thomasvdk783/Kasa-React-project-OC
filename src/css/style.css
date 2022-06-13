@@ -220,7 +220,7 @@ figure {
   font-weight: lighter;
 }
 
-.reponse-equipements {
+.reponse-equipement {
   width: 582px;
   color: #FF6060;
   background-color: #F6F6F6;
@@ -229,6 +229,27 @@ figure {
   text-align: left;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  margin-top: 0;
+  list-style: none;
+}
+.reponse-equipement .li-equipments {
+  background-color: #F6F6F6;
+  color: #ff6060;
+}
+
+.ul-tags {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding: 0px;
+  list-style: none;
+}
+.ul-tags .li-tags {
+  background-color: #ff6060;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .kasa-footer {
@@ -282,10 +303,10 @@ figure {
   width: 1240px;
   margin-top: 45px;
 }
-.kasa-container-header .kasa-header-section2 figure .kasa-img-header {
+.kasa-container-header .kasa-header-section2 figure img {
   position: relative;
 }
-.kasa-container-header .kasa-header-section2 figure .kasa-title-header {
+.kasa-container-header .kasa-header-section2 figure h1 {
   position: absolute;
   z-index: 2;
   left: 300px;
@@ -410,6 +431,48 @@ figure {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.header-profil-rental {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header-profil-rental .left-content-profil-rental .title-rental {
+  width: 80%;
+  margin-bottom: 5px;
+}
+.header-profil-rental .left-content-profil-rental .location-rental {
+  margin-top: 5px;
+}
+.header-profil-rental .right-content-profil-rental {
+  display: flex;
+  flex-direction: column;
+}
+.header-profil-rental .right-content-profil-rental .container-profil-host {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+.header-profil-rental .right-content-profil-rental .container-profil-host .host-name {
+  color: #ff6060;
+  font-size: 18px;
+  width: 75%;
+  text-align: end;
+}
+.header-profil-rental .right-content-profil-rental .container-profil-host figure {
+  width: 100%;
+}
+.header-profil-rental .right-content-profil-rental .container-profil-host figure .img-host {
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+  margin: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 64px;
 }
 
 /*# sourceMappingURL=style.css.map */

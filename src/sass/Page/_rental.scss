@@ -17,3 +17,50 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+
+.header-profil-rental{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    .left-content-profil-rental{
+        .title-rental{
+            width: 80%;
+            margin-bottom: 5px;
+        }
+        .location-rental{
+            margin-top: 5px;
+        }
+    }
+    .right-content-profil-rental{
+        display:flex;
+        flex-direction: column;
+        .container-profil-host{
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+            .host-name{
+                color: #ff6060;
+                font-size: 18px;
+                width:75%;
+                text-align:end;
+            }
+            figure{
+                width: 100%;
+                .img-host{
+                    display:flex;
+                    align-items: flex-end;
+                    padding: 0;
+                    margin: 0;
+                    width: 64px;
+                    height: 64px;
+                    border-radius:64px;
+                }  
+            }
+            
+        }
+    }   
+}
+

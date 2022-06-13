@@ -1,0 +1,15 @@
+// style for tags
+
+.ul-tags{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 0px;list-style: none;
+    .li-tags{
+        background-color: #ff6060;
+        color: #fff;
+        font-size:14px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}

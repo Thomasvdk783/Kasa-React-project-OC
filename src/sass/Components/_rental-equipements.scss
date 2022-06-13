@@ -18,7 +18,7 @@
     
 }
 
-.reponse-equipements{
+.reponse-equipement{
     width: 582px;
     color: #FF6060;
     background-color: #F6F6F6;
@@ -27,4 +27,10 @@
     text-align: left;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    margin-top: 0;
+    list-style: none;
+    .li-equipments{
+        background-color: #F6F6F6;
+        color: #ff6060;
+    }
 }

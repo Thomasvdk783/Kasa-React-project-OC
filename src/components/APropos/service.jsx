@@ -1,5 +1,6 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import ArrowDown from '../../medias/ArrowDown.svg'
+import ArrowUp from '../../medias/ArrowUp.svg'
 import { useEffect, useState} from 'react'
 
 function Service() {
@@ -12,7 +13,7 @@ function Service() {
         <div className="conatiner-a-propos">
             <div id="accordeon-service" className="accordeon-service" onClick={handleDisplayAccordeonService}>
                 <h3 className="title-h3-a-propos">Service</h3>
-                {/* <FontAwesomeIcon icon="fa-solid fa-chevron-down" /> */}
+                <img alt="arrow-down" src={ArrowDown} className="arrow-down"/>
             </div>
             {accordeonService &&
                 <div className="reponse-service">
