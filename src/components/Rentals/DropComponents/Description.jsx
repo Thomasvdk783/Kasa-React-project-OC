@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 function Description(props) {
     const idDescription = window.location.href.split("-").slice(-1);
