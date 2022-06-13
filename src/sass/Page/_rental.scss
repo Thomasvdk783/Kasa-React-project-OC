@@ -11,3 +11,9 @@
     font-size: 18px;
     font-weight: 500;
 }
+
+.container-drop-components{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

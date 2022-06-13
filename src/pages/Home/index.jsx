@@ -11,8 +11,6 @@ function Home() {
         setDatas(rentals)
     }, [])
 
-    console.log(datas)
-
 
 return (
     <div className="App">

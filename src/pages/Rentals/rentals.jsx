@@ -1,18 +1,16 @@
 import React from "react";
 import rentals from "../../local-json/rentals.json";
 import SlideShow from "../../components/Rentals/SlideShow";
-import Description from "../../components/Rentals/Description";
-import Equipements from "../../components/Rentals/Equipements";
+import DropComponents from "../../components/Rentals/DropComponents";
 import { useState, useEffect } from 'react';
 
 function Rentals() {
-  // const [datas, setDatas] = useState(null)
+  const [datas, setDatas] = useState(null)
 
-  // useEffect(() => {
-  //   setDatas(rentals)
-  // }, [])
+  useEffect(() => {
+    setDatas(rentals)
+  }, [])
 
-  // console.log(datas)
 
   // const params = useParams();
   const id = window.location.href.split("-").slice(-1);
@@ -20,7 +18,7 @@ function Rentals() {
 
   return (
     <div className="container-rentals-page">
-      {result.map(({ title, location }) => (
+      {result.map(({ title, location, host }) => (
         <div>
           <SlideShow />
           <div>
@@ -35,9 +33,9 @@ function Rentals() {
               </ul>
             {/* composant */}
             </section>
-            <h3>Alexandre Dumas</h3>
+            <h3 className="host-name">{host.name}</h3>
             <figure>
-              <img src="" alt="" />
+              <img src={host.picture} alt="" />
             </figure>
             <ul>
               <li>stars</li>
@@ -47,8 +45,7 @@ function Rentals() {
               <li>stars</li>
             </ul>
             <section>
-              <Description />
-              <Equipements />
+              <DropComponents datas={datas} />
             </section>
           </div>
         </div>

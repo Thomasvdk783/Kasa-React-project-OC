@@ -3,7 +3,7 @@
 import RentalItem from "./RentalItem";
 
 function RentalListing(props) {
-  console.log(props)
+  // console.log(props)
   return (
     <div>
       <section className="kasa-container-rental-listing">
