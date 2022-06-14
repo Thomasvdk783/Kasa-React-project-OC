@@ -12,6 +12,11 @@ function Description(props) {
         setAccordeon(!accordeonDescription)
     }
 
+    const [showArrowUp, setShowArrowUp] = useState(true)
+    const handleDisplayArrowUp = () => {
+        setShowArrowUp(!showArrowUp)
+    }
+
     return (
         <div>
             <div onClick={handleDisplayAccordeon} id="accordeon-description" className="accordeon-description">
