@@ -9,7 +9,7 @@ function Header() {
     <header className="kasa-container-header">
       <div className='kasa-header-section1'>
         <figure>
-          <img src={LOGO} className="kasa-logo-header" />
+          <img alt="logo" src={LOGO} className="kasa-logo-header" />
         </figure>
         <ul className="kasa-ul-nav">
           <Link className="kasa-li-nav" to="/">Accueil</Link>
