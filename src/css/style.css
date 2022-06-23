@@ -33,6 +33,12 @@ figure {
   padding: 0;
 }
 
+@media screen and (max-width: 375px) {
+  body {
+    max-width: 375px;
+    width: 100%;
+  }
+}
 .a-propos {
   display: flex;
   flex-direction: column;
@@ -444,6 +450,13 @@ figure {
   color: #fff;
 }
 
+@media screen and (max-width: 375px) {
+  .div-card-list {
+    max-width: 375px;
+    width: 100%;
+    margin: auto;
+  }
+}
 .title-rental {
   color: #ff6060;
   font-size: 36px;

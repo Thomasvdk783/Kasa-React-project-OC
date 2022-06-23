@@ -48,3 +48,17 @@
     }
 }
 
+
+@media  screen and(max-width: 375px) {
+    .div-card-list{
+        max-width: 375px;
+        width: 100%;
+        margin: auto;
+        .kasa-card-item{
+            h4{
+            }
+            .cover-img{
+            }
+        }
+    }
+}
