@@ -15,16 +15,16 @@ function SlideShow(props) {
   // step 3 : décrémenter le picturesIndex dans une function
   // step 4: inrémenter le picturesIndex dans une autre function
   const [current, setCurrent] = useState(0)
-  const length = picturesIndex.length;
+  // const length = picturesIndex.length;
+  
   
   function nextPicture () {
-    // alert('Hello dear friend !')
-    setCurrent(current === length - 1 ? 0 : current + 1);
+    console.log(result[0].pictures)
+    setCurrent(current === result[0].pictures.length - 1 ? 0 : current + 1);
   }
 
   function previousPicture () {
-    // alert('Welcome back dear friend !')
-    setCurrent(current === 0 ? length -1 : current - 1);
+    setCurrent(current === 0 ? result[0].pictures.length -1 : current - 1);
   }
 
 
@@ -43,7 +43,7 @@ function SlideShow(props) {
         </div>
         {
           result && result.map(({pictures, title, id}) => 
-              <img key={id} alt={title} className="img-slide-show" src={pictures[picturesIndex]} />
+              <img key={id} alt={title} className="img-slide-show" src={pictures[current]} />
         )}
       </div>
     </div>

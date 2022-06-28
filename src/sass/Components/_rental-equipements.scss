@@ -1,6 +1,7 @@
 // Style for rental equipement compinent in rental page //
 
 .accordeon-equipements{
+    height: 52px;
     width: 582px;
     display: flex;
     justify-content: space-between;
@@ -32,5 +33,19 @@
     .li-equipments{
         background-color: #F6F6F6;
         color: #ff6060;
+    }
+}
+
+
+@media  screen and (max-width: 375px) {
+    .accordeon-equipements{
+        width: 335px;
+        height: 29px;
+        font-size: 13px;
+    }
+    
+    .reponse-equipements{
+        width: 335px;
+        font-size: 13px;
     }
 }

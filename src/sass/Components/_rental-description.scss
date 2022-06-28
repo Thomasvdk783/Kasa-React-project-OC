@@ -1,4 +1,5 @@
 .accordeon-description{
+    height: 52px;
     width: 582px;
     display: flex;
     justify-content: space-between;
@@ -25,4 +26,17 @@
     text-align: left;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+
+@media  screen and (max-width: 375px) {
+    .accordeon-description{
+        width: 335px;
+        height: 29px;
+        font-size: 13px;
+    }
+    
+    .reponse-description{
+        width: 335px;
+        font-size: 13px;
+    }
 }

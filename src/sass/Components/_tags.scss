@@ -13,3 +13,14 @@
         border-radius: 10px;
     }
 }
+
+@media screen and (max-width: 375px) {
+    .ul-tags{
+        gap: 5px;
+        .li-tags{
+            width: 84px;
+            color: #fff;
+            font-size:10px;
+        }
+    }
+}
