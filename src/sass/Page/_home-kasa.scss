@@ -51,13 +51,21 @@
 
 @media  screen and(max-width: 375px) {
     .div-card-list{
-        max-width: 375px;
+        max-width: 335px;
         width: 100%;
         margin: auto;
+        padding: 0;
         .kasa-card-item{
+            width: 335px;
+            height: 255px;
             h4{
             }
             .cover-img{
+                width: 335px;
+                height: 255px;
+                object-fit: content;
+                border-radius:10px;
+                transition: 1s;
             }
         }
     }

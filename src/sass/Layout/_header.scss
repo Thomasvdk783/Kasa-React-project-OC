@@ -50,31 +50,53 @@
 }
 
 @media screen and (max-width: 375px) {
-  .kasa-header {
-    max-width: 375px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    .kasa-ul-nav {
+    .kasa-container-header {
+      max-width: 375px;
+      width: 90%;
+      margin: auto;
       display: flex;
       flex-direction: row;
-      list-style-type: none;
-      gap: 25px;
-      .kasa-li-nav {
-        color: #ff6060;
-        font-weight: 500;
-        font-size: 24px;
-        &:hover {
-          cursor: pointer;
-          text-decoration: underline;
+      justify-content: space-between;
+      align-items: center;
+      .kasa-header-section1 {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+        justify-content: space-between;
+        align-items: center;
+      .kasa-logo-header{
+        width: 145px;
+        height: 45px;
+      }
+      .kasa-ul-nav {
+        display: flex;
+        flex-direction: row;
+        .kasa-li-nav {
+          font-size: 12px!important;
         }
       }
     }
   }
-}
-
-@media screen and (max-width: 375px) {
-
+  .kasa-header-section2 {
+    width: 335px;
+    height: 111px;
+    margin: auto;
+    margin-bottom: 25px;
+  figure {
+    img{
+      position: relative;
+      width: 335px;
+      height: 111px;
+    }
+    h1 {
+      position: absolute;
+      z-index: 2;
+      top: 115px;
+      left: 20px;
+      color: #fff;
+      font-size: 24px;
+      font-weight: 500;
+      }
+    }
+  }
 }

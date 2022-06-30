@@ -2,6 +2,18 @@
 
 .kasa-banner-a-propos {
     border-radius: 25px;
-    background-color: #000;
-    opacity: 0.5;
+}
+
+@media screen and (max-width: 375px){
+    .kasa-header-section2{
+        height: 223px;
+        margin-bottom: 150px;
+        figure{
+            height: 223px;
+            .kasa-banner-a-propos{
+                object-fit: cover;
+                height: 223px;
+            }
+        }
+    }
 }

@@ -170,10 +170,21 @@ figure {
 
 .kasa-banner-a-propos {
   border-radius: 25px;
-  background-color: #000;
-  opacity: 0.5;
 }
 
+@media screen and (max-width: 375px) {
+  .kasa-header-section2 {
+    height: 223px;
+    margin-bottom: 150px;
+  }
+  .kasa-header-section2 figure {
+    height: 223px;
+  }
+  .kasa-header-section2 figure .kasa-banner-a-propos {
+    object-fit: cover;
+    height: 223px;
+  }
+}
 .slideshow-container {
   position: relative;
 }
@@ -445,28 +456,53 @@ figure {
 }
 
 @media screen and (max-width: 375px) {
-  .kasa-header {
+  .kasa-container-header {
     max-width: 375px;
-    width: 100%;
+    width: 90%;
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
-  .kasa-header .kasa-ul-nav {
+  .kasa-container-header .kasa-header-section1 {
     display: flex;
     flex-direction: row;
-    list-style-type: none;
-    gap: 25px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
   }
-  .kasa-header .kasa-ul-nav .kasa-li-nav {
-    color: #ff6060;
-    font-weight: 500;
+  .kasa-container-header .kasa-header-section1 .kasa-logo-header {
+    width: 145px;
+    height: 45px;
+  }
+  .kasa-container-header .kasa-header-section1 .kasa-ul-nav {
+    display: flex;
+    flex-direction: row;
+  }
+  .kasa-container-header .kasa-header-section1 .kasa-ul-nav .kasa-li-nav {
+    font-size: 12px !important;
+  }
+
+  .kasa-header-section2 {
+    width: 335px;
+    height: 111px;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+  .kasa-header-section2 figure img {
+    position: relative;
+    width: 335px;
+    height: 111px;
+  }
+  .kasa-header-section2 figure h1 {
+    position: absolute;
+    z-index: 2;
+    top: 115px;
+    left: 20px;
+    color: #fff;
     font-size: 24px;
-  }
-  .kasa-header .kasa-ul-nav .kasa-li-nav:hover {
-    cursor: pointer;
-    text-decoration: underline;
+    font-weight: 500;
   }
 }
 .error-page {
@@ -545,9 +581,21 @@ figure {
 
 @media screen and (max-width: 375px) {
   .div-card-list {
-    max-width: 375px;
+    max-width: 335px;
     width: 100%;
     margin: auto;
+    padding: 0;
+  }
+  .div-card-list .kasa-card-item {
+    width: 335px;
+    height: 255px;
+  }
+  .div-card-list .kasa-card-item .cover-img {
+    width: 335px;
+    height: 255px;
+    object-fit: content;
+    border-radius: 10px;
+    transition: 1s;
   }
 }
 .title-rental {

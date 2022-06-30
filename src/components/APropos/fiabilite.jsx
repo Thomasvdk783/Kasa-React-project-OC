@@ -13,7 +13,7 @@ function Fiabilite() {
     return (
 
         <div className="conatiner-a-propos">
-                <div id="accordeon-fiabilite" className="accordeon-fiabilite" onClick={handleDisplayAccordeon}>
+            <div id="accordeon-fiabilite" className="accordeon-fiabilite" onClick={handleDisplayAccordeon}>
                 <h3 className="title-h3-a-propos">Fiabilité</h3>
                 <img alt="arrow-down" src={ArrowDown} className="arrow-down"/>
             </div>

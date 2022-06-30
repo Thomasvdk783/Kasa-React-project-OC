@@ -7,7 +7,7 @@ function BannerHeaderAPropos() {
 return (
     <div className='kasa-header-section2'>
         <figure>
-            <img src={bannerApropos} className="kasa-banner-a-propos" />
+            <img src={bannerApropos} className="kasa-banner-a-propos" alt="Banner"/>
         </figure>
     </div>
 );

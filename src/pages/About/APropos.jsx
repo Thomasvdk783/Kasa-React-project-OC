@@ -9,11 +9,16 @@ import Responsabilite from "../../components/APropos/responsabilite"
 function APropos() {
 return (
     <div className="a-propos">
-        <BannerHeaderAPropos />
-        <Fiabilite/>
-        <Respect />
-        <Service />
-        <Responsabilite />
+        <div>
+            <BannerHeaderAPropos />
+        </div>
+        <div>
+            <Fiabilite/>
+            <Respect />
+            <Service />
+            <Responsabilite />
+        </div>
+        
     </div>
 );
 }

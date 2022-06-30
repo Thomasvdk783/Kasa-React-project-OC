@@ -19,7 +19,7 @@ function Rentals() {
 
   return (
     <div className="container-rentals-page">
-      {result.map(({ title, id , location, host }) => (
+      {result.map(({ title, id , location, host, rating}) => (
         <div key={id}>
           <SlideShow datas={datasRentals}/>
           <div className="header-profil-rental">
@@ -38,6 +38,7 @@ function Rentals() {
               </div>
               
               <ul>
+                {parseInt(rating) === 1 && <li></li>}
                 <li>stars</li>
               </ul>
             </section>
