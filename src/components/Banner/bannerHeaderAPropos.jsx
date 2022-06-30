@@ -6,7 +6,7 @@ import bannerApropos from "../../medias/bannerApropos.png";
 function BannerHeaderAPropos() {
 return (
     <div className='kasa-header-section2'>
-        <figure>
+        <figure className="figure-banner-a-propos">
             <img src={bannerApropos} className="kasa-banner-a-propos" alt="Banner"/>
         </figure>
     </div>

@@ -14,12 +14,12 @@ function Respect() {
 
     return (
         <div className="conatiner-a-propos">
-            <div id="accordeon-respect" onClick={handleDisplayAccordeonRespect} className="accordeon-respect">
+            <div id="accordeon-respect" onClick={handleDisplayAccordeonRespect} className="accordeon-title">
                 <h3 className="title-h3-a-propos">Respect</h3>
                 <img alt="arrow-down" src={ArrowDown} className="arrow-down"/>
             </div>
             {accordeonRespect && 
-                <div className="reponse-respect">
+                <div className="accordeon-reponse">
                     <p>Le bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.</p>
                 </div>
             }

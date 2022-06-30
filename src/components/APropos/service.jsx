@@ -11,12 +11,12 @@ function Service() {
 
     return (
         <div className="conatiner-a-propos">
-            <div id="accordeon-service" className="accordeon-service" onClick={handleDisplayAccordeonService}>
+            <div id="accordeon-service" className="accordeon-title" onClick={handleDisplayAccordeonService}>
                 <h3 className="title-h3-a-propos">Service</h3>
                 <img alt="arrow-down" src={ArrowDown} className="arrow-down"/>
             </div>
             {accordeonService &&
-                <div className="reponse-service">
+                <div className="accordeon-reponse">
                     <p>Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.</p>
                 </div>
             }

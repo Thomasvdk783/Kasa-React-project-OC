@@ -13,12 +13,12 @@ function Fiabilite() {
     return (
 
         <div className="conatiner-a-propos">
-            <div id="accordeon-fiabilite" className="accordeon-fiabilite" onClick={handleDisplayAccordeon}>
+            <div id="accordeon-fiabilite" className="accordeon-title" onClick={handleDisplayAccordeon}>
                 <h3 className="title-h3-a-propos">Fiabilité</h3>
                 <img alt="arrow-down" src={ArrowDown} className="arrow-down"/>
             </div>
             {accordeon &&
-            <div className="reponse-fiabilite">
+            <div className="accordeon-reponse">
                 <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées pas nos équipes.</p>
             </div>}
         </div>

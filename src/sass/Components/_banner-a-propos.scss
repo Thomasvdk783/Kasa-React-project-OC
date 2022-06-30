@@ -1,18 +1,24 @@
 // Banner page a propos //  
 
-.kasa-banner-a-propos {
-    border-radius: 25px;
+.kasa-header-section2{
+    max-width: 1240px;
+    width: 100%;
+    .figure-banner-a-propos{
+        max-width: 1240px;
+        .kasa-banner-a-propos{
+            border-radius: 25px;
+        }
+    }
 }
 
 @media screen and (max-width: 375px){
     .kasa-header-section2{
-        height: 223px;
-        margin-bottom: 150px;
-        figure{
-            height: 223px;
+        max-width: 335px;
+        width: 100%;
+        .figure-banner-a-propos{
             .kasa-banner-a-propos{
-                object-fit: cover;
                 height: 223px;
+                object-fit: cover;
             }
         }
     }

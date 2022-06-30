@@ -45,7 +45,12 @@ figure {
   gap: 50px;
 }
 
-.conatiner-a-propos {
+.container-drop-page-a-propos {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.container-drop-page-a-propos .conatiner-a-propos {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -56,7 +61,7 @@ figure {
   margin: 5px;
 }
 
-.accordeon-fiabilite {
+.accordeon-title {
   width: 1023px;
   display: flex;
   justify-content: space-between;
@@ -68,12 +73,12 @@ figure {
   font-size: 24px;
   cursor: pointer;
 }
-.accordeon-fiabilite h3 {
+.accordeon-title h3 {
   padding-left: 15px;
   font-weight: lighter;
 }
 
-.reponse-fiabilite {
+.accordeon-reponse {
   width: 1023px;
   color: #FF6060;
   background-color: #F6F6F6;
@@ -84,105 +89,56 @@ figure {
   border-bottom-right-radius: 5px;
 }
 
-.accordeon-respect {
-  width: 1023px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem;
-  background-color: #FF6060;
-  color: #fff;
-  border-radius: 5px;
-  font-size: 24px;
-  cursor: pointer;
-}
-.accordeon-respect h3 {
-  padding-left: 15px;
-  font-weight: lighter;
-}
+@media screen and (max-width: 375px) {
+  .a-propos {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+  }
 
-.reponse-respect {
-  width: 1023px;
-  color: #FF6060;
-  background-color: #F6F6F6;
-  padding: 0.5rem;
-  font-size: 24px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  text-align: left;
-}
+  .container-drop-page-a-propos {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 319px;
+    margin: auto;
+  }
+  .container-drop-page-a-propos .conatiner-a-propos {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.accordeon-service {
-  width: 1023px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem;
-  background-color: #FF6060;
-  color: #fff;
-  border-radius: 5px;
-  font-size: 24px;
-  cursor: pointer;
-}
-.accordeon-service h3 {
-  padding-left: 15px;
-  font-weight: lighter;
-}
+  .accordeon-title {
+    width: 319px;
+    font-size: 13px;
+  }
 
-.reponse-service {
-  width: 1023px;
-  color: #FF6060;
-  background-color: #F6F6F6;
-  padding: 0.5rem;
-  font-size: 24px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  text-align: left;
+  .accordeon-reponse {
+    width: 319px;
+    font-size: 12px;
+  }
 }
-
-.accordeon-responsabilite {
-  width: 1023px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem;
-  background-color: #FF6060;
-  color: #fff;
-  border-radius: 5px;
-  font-size: 24px;
-  cursor: pointer;
+.kasa-header-section2 {
+  max-width: 1240px;
+  width: 100%;
 }
-.accordeon-responsabilite h3 {
-  padding-left: 15px;
-  font-weight: lighter;
+.kasa-header-section2 .figure-banner-a-propos {
+  max-width: 1240px;
 }
-
-.reponse-responsabilite {
-  width: 1023px;
-  color: #FF6060;
-  background-color: #F6F6F6;
-  padding: 0.5rem;
-  font-size: 24px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  text-align: left;
-}
-
-.kasa-banner-a-propos {
+.kasa-header-section2 .figure-banner-a-propos .kasa-banner-a-propos {
   border-radius: 25px;
 }
 
 @media screen and (max-width: 375px) {
   .kasa-header-section2 {
-    height: 223px;
-    margin-bottom: 150px;
+    max-width: 335px;
+    width: 100%;
   }
-  .kasa-header-section2 figure {
+  .kasa-header-section2 .figure-banner-a-propos .kasa-banner-a-propos {
     height: 223px;
-  }
-  .kasa-header-section2 figure .kasa-banner-a-propos {
     object-fit: cover;
-    height: 223px;
   }
 }
 .slideshow-container {
@@ -711,21 +667,6 @@ figure {
   }
   .header-profil-rental .right-content-profil-rental .container-profil-host {
     width: 335px;
-  }
-  .header-profil-rental .right-content-profil-rental .container-profil-host .rating {
-    --dir: right;
-    --fill: gold;
-    --fillbg: rgba(100, 100, 100, 0.15);
-    --star: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.25l-6.188 3.75 1.641-7.031-5.438-4.734 7.172-0.609 2.813-6.609 2.813 6.609 7.172 0.609-5.438 4.734 1.641 7.031z"/></svg>');
-    --stars: 5;
-    --starsize: 1rem;
-    --value: 1;
-    --x: calc(100% * (var(--value) / var(--stars)));
-    block-size: var(--starsize);
-    inline-size: calc(var(--stars) * var(--starsize));
-    position: relative;
-    touch-action: manipulation;
-    -webkit-appearance: none;
   }
   .header-profil-rental .right-content-profil-rental .container-profil-host .host-name {
     color: #ff6060;
