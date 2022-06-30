@@ -4,6 +4,8 @@ import SlideShow from "../../components/Rentals/SlideShow";
 import DropComponents from "../../components/Rentals/DropComponents";
 import Tags from "../../components/Rentals/Tags";
 import { useState, useEffect } from 'react';
+import StarGrey from "../../medias/StarGrey.svg"
+import StarRed from "../../medias/StarRed.svg"
 
 function Rentals() {
   const [datasRentals, setDatasRentals] = useState(null)
@@ -37,12 +39,13 @@ function Rentals() {
                 
               </div>
               
-              <ul>
-                {parseInt(rating) === 1 && <li></li>}
-                <li className="rating">stars</li>
-                <li className="rating">stars</li>
-                <li className="rating">stars</li>
-              </ul>
+              <div className="container-stars">
+                <img className="stars" src={StarRed} alt="rating" />
+                <img className="stars" src={StarRed} alt="rating" />
+                <img className="stars" src={StarRed} alt="rating" />
+                <img className="stars" src={StarGrey} alt="rating" />
+                <img className="stars" src={StarGrey} alt="rating" />
+              </div>
             </section>
           </div>
           <section className="section-drop-container">

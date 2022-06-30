@@ -78,6 +78,7 @@
         justify-content:space-between;
         width: 335px;
         margin: auto;
+        margin-bottom: 25px;
         .left-content-profil-rental{
             width: 335px;
             .title-rental{
@@ -88,32 +89,37 @@
             }
         }
         .right-content-profil-rental{
-            width: 335px;
+            width: 319px;
             margin: auto;
             display: flex;
             flex-direction: row-reverse;
             justify-content: space-between;
+            align-items: center;
             .container-profil-host{
                 width: 335px;
                 .host-name{
                     color: #ff6060;
-                    font-size: 18px;
+                    font-size: 14px;
                     width:75%;
                     text-align:end;
                 }
                 figure{
-                    width: 100%;
+                    width: auto;
                     .img-host{
-                        display:flex;
-                        align-items: flex-end;
-                        padding: 0;
                         margin: 0;
-                        width: 64px;
-                        height: 64px;
-                        border-radius:64px;
                     }  
                 }                
             }
+            .container-stars{
+                width: 50%;
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+                .stars{
+                    width: 15px;
+                }
+            }
+            
         }   
     }
 

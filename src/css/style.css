@@ -648,6 +648,7 @@ figure {
     justify-content: space-between;
     width: 335px;
     margin: auto;
+    margin-bottom: 25px;
   }
   .header-profil-rental .left-content-profil-rental {
     width: 335px;
@@ -659,32 +660,36 @@ figure {
     font-size: 14px;
   }
   .header-profil-rental .right-content-profil-rental {
-    width: 335px;
+    width: 319px;
     margin: auto;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: center;
   }
   .header-profil-rental .right-content-profil-rental .container-profil-host {
     width: 335px;
   }
   .header-profil-rental .right-content-profil-rental .container-profil-host .host-name {
     color: #ff6060;
-    font-size: 18px;
+    font-size: 14px;
     width: 75%;
     text-align: end;
   }
   .header-profil-rental .right-content-profil-rental .container-profil-host figure {
-    width: 100%;
+    width: auto;
   }
   .header-profil-rental .right-content-profil-rental .container-profil-host figure .img-host {
-    display: flex;
-    align-items: flex-end;
-    padding: 0;
     margin: 0;
-    width: 64px;
-    height: 64px;
-    border-radius: 64px;
+  }
+  .header-profil-rental .right-content-profil-rental .container-stars {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  .header-profil-rental .right-content-profil-rental .container-stars .stars {
+    width: 15px;
   }
 
   .section-drop-container {
