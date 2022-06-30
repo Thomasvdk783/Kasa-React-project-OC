@@ -58,13 +58,17 @@
     }   
 }
 
-.container-drop-components{
+.section-drop-container{
     max-width: 1240px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    .container-drop-components{
+        max-width: 1240px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
+
 
 
 @media screen and (max-width:375px){
@@ -72,34 +76,72 @@
         display:flex;
         flex-direction: column;
         justify-content:space-between;
+        width: 335px;
+        margin: auto;
         .left-content-profil-rental{
+            width: 335px;
             .title-rental{
+                font-size: 18px;
             }
             .location-rental{
+                font-size: 14px;
             }
         }
         .right-content-profil-rental{
+            width: 335px;
+            margin: auto;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
             .container-profil-host{
-
+                width: 335px;
+                .rating{
+                    --dir: right;
+                    --fill: gold;
+                    --fillbg: rgba(100, 100, 100, 0.15);
+                    --star: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.25l-6.188 3.75 1.641-7.031-5.438-4.734 7.172-0.609 2.813-6.609 2.813 6.609 7.172 0.609-5.438 4.734 1.641 7.031z"/></svg>');
+                    --stars: 5;
+                    --starsize: 1rem;
+                    --value: 1;
+                    --x: calc(100% * (var(--value) / var(--stars)));
+                    block-size: var(--starsize);
+                    inline-size: calc(var(--stars) * var(--starsize));
+                    position: relative;
+                    touch-action: manipulation;
+                    -webkit-appearance: none;
+                }
                 .host-name{
-
+                    color: #ff6060;
+                    font-size: 18px;
+                    width:75%;
+                    text-align:end;
                 }
                 figure{
-
+                    width: 100%;
                     .img-host{
-
+                        display:flex;
+                        align-items: flex-end;
+                        padding: 0;
+                        margin: 0;
+                        width: 64px;
+                        height: 64px;
+                        border-radius:64px;
                     }  
-                }
-                
+                }                
             }
         }   
     }
 
-    .container-drop-components{
-        max-width: 365px;
-        display: flex;
-        flex-direction: column !important; 
+    .section-drop-container{
+        width: 335px;
         margin: auto;
+        .container-drop-components{
+            margin: auto;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 15px;
+        }
     }
-    
 }

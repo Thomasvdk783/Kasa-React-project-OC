@@ -18,7 +18,7 @@ function Description(props) {
     }
 
     return (
-        <div>
+        <div className="component-description">
             <div onClick={handleDisplayAccordeon} id="accordeon-description" className="accordeon-description">
                 <h3 className="title-description">Description</h3>
                 <img alt="arrow-down" src={ArrowDown} className="arrow-down"/>

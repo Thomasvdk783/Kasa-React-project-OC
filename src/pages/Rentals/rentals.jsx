@@ -39,11 +39,13 @@ function Rentals() {
               
               <ul>
                 {parseInt(rating) === 1 && <li></li>}
-                <li>stars</li>
+                <li className="rating">stars</li>
+                <li className="rating">stars</li>
+                <li className="rating">stars</li>
               </ul>
             </section>
           </div>
-          <section>
+          <section className="section-drop-container">
             <DropComponents datas={datasRentals} />
           </section>
         </div>
