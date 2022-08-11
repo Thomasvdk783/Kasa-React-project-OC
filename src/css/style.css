@@ -400,6 +400,7 @@ figure {
   margin-top: 45px;
 }
 .kasa-container-header .kasa-header-section2 figure img {
+  z-index: 0;
   position: relative;
 }
 .kasa-container-header .kasa-header-section2 figure h1 {
