@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Kasa-React-project-OC/static/css/main.d0f9c430.css",
+    "main.js": "/Kasa-React-project-OC/static/js/main.b5b3abfe.js",
+    "static/js/787.0ce615c0.chunk.js": "/Kasa-React-project-OC/static/js/787.0ce615c0.chunk.js",
+    "static/media/bannerApropos.png": "/Kasa-React-project-OC/static/media/bannerApropos.fce6fc3e9ed27433e9b0.png",
+    "static/media/MaskGroup.jpg": "/Kasa-React-project-OC/static/media/MaskGroup.f14f9d0f3cb1fbd80f48.jpg",
+    "static/media/LOGO.svg": "/Kasa-React-project-OC/static/media/LOGO.a6101328193bb3191cbcb50c120ec0d1.svg",
+    "static/media/LOGOWhite.svg": "/Kasa-React-project-OC/static/media/LOGOWhite.ee689fd9409d1b5a898b4247819d8a00.svg",
+    "index.html": "/Kasa-React-project-OC/index.html",
+    "static/media/ArrowDown.svg": "/Kasa-React-project-OC/static/media/ArrowDown.b052dd29e3a2bab76700eee79e133c37.svg",
+    "static/media/ArrowRight.svg": "/Kasa-React-project-OC/static/media/ArrowRight.88153a5d119c2744ffe34dca1ef843df.svg",
+    "static/media/ArrowLeft.svg": "/Kasa-React-project-OC/static/media/ArrowLeft.19918a1634b1441a25ae0b50e6b1f85b.svg",
+    "static/media/ArrowUp.svg": "/Kasa-React-project-OC/static/media/ArrowUp.78bd04c58743a7da8d3cf86f2cc23063.svg",
+    "static/media/StarGrey.svg": "/Kasa-React-project-OC/static/media/StarGrey.7e4ba6032d7d80ecc30aa389973cef95.svg",
+    "static/media/StarRed.svg": "/Kasa-React-project-OC/static/media/StarRed.6430150c126a3adf92c132c52c9c7428.svg",
+    "main.d0f9c430.css.map": "/Kasa-React-project-OC/static/css/main.d0f9c430.css.map",
+    "main.b5b3abfe.js.map": "/Kasa-React-project-OC/static/js/main.b5b3abfe.js.map",
+    "787.0ce615c0.chunk.js.map": "/Kasa-React-project-OC/static/js/787.0ce615c0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d0f9c430.css",
+    "static/js/main.b5b3abfe.js"
+  ]
+}
